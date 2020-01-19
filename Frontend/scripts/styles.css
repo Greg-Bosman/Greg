@@ -47,6 +47,7 @@ section{
     margin: 5rem 0;
 }
 
+/*
 button{
     padding: 0;
     border: none;
@@ -55,14 +56,13 @@ button{
     color: inherit;
     background: none;
     
-/*
     zorgt ervoor dat de default button styles gereset worden
     
     source:
     https://css-tricks.com/overriding-default-button-styles/
     From Benjamin De Cock (Stripe Designer)
-*/
 }
+*/
 
 
 /*======================================
@@ -347,6 +347,10 @@ FORMULIER BEGIN
 ========================================
 */
 
+footer{
+    margin-bottom: 10em;
+}
+
 fieldset{
     border: none;
 }
@@ -369,8 +373,16 @@ label{
 
 input{
     width: 40em;
+    padding: 0 4em;
     height: 3em;
     margin-bottom: 1em;
+}
+
+#footerknop{
+    width: 20em;
+    padding: 2em;
+    background-color: lightgray;
+    text-align: center;
 }
 
 
