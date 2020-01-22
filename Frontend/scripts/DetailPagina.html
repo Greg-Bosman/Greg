@@ -5,11 +5,13 @@
     <title>DetailPaginaS</title>
     <link rel="stylesheet" href="/scripts/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="Javascript.js"></script>
 </head>
+
 <body>
-    <!--       Header START-->   
-   
-   
+    <!--       Header START-->
+
+
     <header>
 
         <a href="">
@@ -23,155 +25,150 @@
                 <li><a href="">Bestel nu kaarten</a></li>
             </ul>
         </nav>
-        
+
     </header>
 
-     <!--       Header END-->   
-     
-     
-     
-<!--     <section>-->
-    
-    
-     <header class="detail-pagina-event">
-         <img src="/images/headerImages/at%20night.jpg" alt="">
-         <aside>
-             <h2>Owl Show</h2>
-         </aside>
-     </header>
-    
-     
-<!--    </section>-->
-    
-    
-    <main class="artiesten-info">
-    <section>
-      
-<!--      de tab die ervoor zorgt dat de content van informatie over het event naar informatie over de artiesten veranderd  -->
-      
-       <div id="info-tab">
-            <button>Event</button>
-            <button>Artist</button>
-        </div>
-        
+    <!--       Header END-->
 
-        <article class="content">
-            <h3>Event</h3>
-            <p>A spectacular event that combines the best the hiphop industry has to offer. From old school to lofi,the dynamic trio of Najubes, J Dilla and Goon Trax never disappoint.</p>
-        </article>
-        
-        
-        <article>
-            <div class="artiest-detail">
-                <img src="/images/artiestenFotos/nujabes.jpg" alt="">
-<!--     Bron: https://pbs.twimg.com/media/Dy1bKn2WkAAFrWl.jpg      -->
-                
-                <div class="artiest-info-tekst">
-                    <h3>Nujabes</h3>
+
+
+    <!--     <section>-->
+
+
+    <header class="event-header">
+        <img src="/images/headerImages/at%20night.jpg" alt="">
+        <aside>
+            <h2>Owl Show</h2>
+        </aside>
+    </header>
+
+
+    <!--    </section>-->
+
+
+    <main>
+        <section class="event-detail">
+            <h2>Information</h2>
+            <!--      de tab die ervoor zorgt dat de content van informatie over het event naar informatie over de artiesten veranderd  -->
+
+            <div id="info-tab">
+                <button id="event-description" class="active">Event</button>
+                <button id="event-artiesten">Artist</button>
+            </div>
+
+
+            <div class="flex-container-center">
+                <article id="event-info" class="tekst-container">
+                    <h3>Event</h3>
+                    <p>A spectacular event that combines the best the hiphop industry has to offer. From old school to lofi,the dynamic trio of Najubes, J Dilla and Goon Trax never disappoint.</p>
                     
-                    <h4>Genre</h4>
-                    <p>Lofi-hiphop</p>
+                    <h4>Date</h4>
+                    <p>2 June 2020</p>
                     
-                    <h4>Bekent van</h4>
-                    <p>Lady Brown, reflection</p>
+                    <h4>Time</h4>
+                    <p>21:00 - 00:00</p>
+                    
+                    <h4>Location</h4>
+                    <p>Yellow Hill district</p>
+                </article>
+            </div>
+
+                <div id="alle-artiesten" class="flex-container hide">
+                    
+                       <article>
+                        <div class="artiest-detail">
+                            <img src="/images/artiestenFotos/jdilla.jpg" alt="J Dilla">
+                            <!-- Bron: https://mise.damusic.be/multiped/original/flashback-2006-j-dilla-verliest-strijd-tegen-zeldzame-bloedziekte-37328.jpg-->
+
+
+                            <div class="tekst-container">
+                                <h3>J Dilla</h3>
+                                <h4>Genre</h4>
+                                <p>Hiphop</p>
+
+                                <h4>Bekent van:</h4>
+                                <p>So far to go, Reckless driving</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artiest-detail">
+                            <img src="/images/artiestenFotos/goontrax.jpg" alt="Goon Trax">
+
+                            <!-- Bron: https://imgs.ototoy.jp/feature/image.php/2018041101/_DSC2981.jpg?width=1200-->
+
+                            <div class="tekst-container">
+                                <h3>Goon Trax</h3>
+                                <h4>Genre</h4>
+                                <p>Hiphop and Free style</p>
+
+                                <h4>Bekent van:</h4>
+                                <p>My Crew deep, All on the Table</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article>
+                        <div class="artiest-info">
+                            <img src="/images/artiestenFotos/nujabes.jpg" alt="Nujabes">
+                            <!--     Bron: https://pbs.twimg.com/media/Dy1bKn2WkAAFrWl.jpg      -->
+
+                            <div class="tekst-container">
+                                <h3>Nujabes</h3>
+
+                                <h4>Genre</h4>
+                                <p>Lofi-hiphop</p>
+
+                                <h4>Bekent van:</h4>
+                                <p>Lady Brown, reflection</p>
+                            </div>
+                        </div>
+                    </article>
+
                 </div>
+
+                    <div class="btn-positioner">
+                        <a href="#" class="btn">Plan dit event!</a>
+                    </div>    
+        </section>
+
+
+        <section>
+
+            <h2>Artist comments</h2>
+            <div class="flex-container">
+                <article>
+                    <div class="comment">
+<!--                        <img src="x" alt="">-->
+                        <h3>Goon Trax</h3>
+                        <q>It's an honour to be performing at Down The Rabbit Hole this year. Love from our whole crew</q>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="comment">
+<!--                        <img src="x" alt="">-->
+                        <h3>J Dilla</h3>
+                        <q>Music is my life. Being able to share what I create is a blessing I am very thankful for</q>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="comment">
+<!--                        <img src="x" alt="">-->
+                        <h3>Nujabes</h3>
+                        <q>Only 4 more days! I hope you are all ready!</q>
+                    </div>
+                </article>
             </div>
-            
-            
-            
-            <div class="artiest-detail">
-                <img src="/images/artiestenFotos/jdilla.jpg" alt="">
-<!-- Bron: https://mise.damusic.be/multiped/original/flashback-2006-j-dilla-verliest-strijd-tegen-zeldzame-bloedziekte-37328.jpg-->
-                
-                
-                <div class="artiest-info-tekst">
-                    <h3>J Dilla</h3>
-                    <h4>Genre</h4>
-                    <p>Hiphop</p>
-                    
-                    <h4>Bekent van</h4>
-                    <p>liedjes</p>
-                </div>
-            </div>
-            
-            <div class="artiest-detail">
-                <img src="/images/artiestenFotos/goontrax.jpg" alt="">
-                
-<!-- Bron: https://imgs.ototoy.jp/feature/image.php/2018041101/_DSC2981.jpg?width=1200-->
-                
-                <div class="artiest-info-tekst">
-                    <h3>Goon Trax</h3>
-                    <h4>Genre</h4>
-                    <p>Hiphop and Free style</p>
-                    
-                    <h4>Bekent van</h4>
-                    <p>My Crew deep, All on the Table</p>
-                </div>
-            </div>
-        </article>
-        
-        <a href="#" class="btn">Plan dit event!</a>
-    </section>
-    
-    <section>
-        <h2>comments</h2>
-        <div class="comments-flex-container">
-            <div class="comment">
-                <img src="x" alt="">
-                <h3>Joris Kuisman</h3>
-                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, numquam, provident. Earum culpa odit quam temporibus ratione, quas aliquam laboriosam.</q>
-                <h4>status</h4>
-                <p>gaat</p>
-            </div>
-            
-            <div class="comment">
-                <img src="x" alt="">
-                <h3>Naam</h3>
-                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, numquam, provident. Earum culpa odit quam temporibus ratione, quas aliquam laboriosam.</q>
-                <h4>status</h4>
-                <p>gaat</p>
-            </div>
-            
-            <div class="comment">
-                <img src="x" alt="">
-                <h3>Naam</h3>
-                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, numquam, provident. Earum culpa odit quam temporibus ratione, quas aliquam laboriosam.</q>
-                <h4>status</h4>
-                <p>gaat</p>
-            </div>
-            
-            <div class="comment">
-                <img src="x" alt="">
-                <h3>Naam</h3>
-                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, numquam, provident. Earum culpa odit quam temporibus ratione, quas aliquam laboriosam.</q>
-                <h4>status</h4>
-                <p>gaat</p>
-            </div>
-            
-            <div class="comment">
-                <img src="x" alt="">
-                <h3>Naam</h3>
-                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, numquam, provident. Earum culpa odit quam temporibus ratione, quas aliquam laboriosam.</q>
-                <h4>status</h4>
-                <p>gaat</p>
-            </div>
-            
-            <div class="comment">
-                <img src="x" alt="">
-                <h3>Naam</h3>
-                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, numquam, provident. Earum culpa odit quam temporibus ratione, quas aliquam laboriosam.</q>
-                <h4>status</h4>
-                <p>gaat</p>
-            </div>
-        </div>
-    </section>
-    
-    
-    
+        </section>
+
+
+
     </main>
-    
-    
-    
-    <script src="Javascript.js"></script>
-</body>
-</html>
+
+
+
+
+</body></html>
