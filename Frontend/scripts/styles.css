@@ -8,7 +8,7 @@ UNIVERSAL CLASSES START
 ========================================
 */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -16,34 +16,36 @@ UNIVERSAL CLASSES START
     font-family: "Montserrat", sans-serif;
 }
 
-body{
+body {
     background-color: #24252A;
 }
 
-h2{
+h2 {
     text-align: center;
     color: white;
     margin-bottom: 1em;
 }
 
-h3{
+h3 {
     margin-bottom: 1em;
 }
 
-a{
+a {
     color: black;
 }
 
-li, li a, button {
-    
+li,
+li a,
+button {
+
     font-weight: 500;
     font-size: 1em;
-    color:#edf0f1;
+    color: #edf0f1;
     list-style: none;
 
 }
 
-section{
+section {
     margin: 5rem 0;
 }
 
@@ -68,7 +70,7 @@ header {
     flex-wrap: wrap;
 }
 
-nav li{
+nav li {
 
     display: inline-block;
     padding: 1em 2em;
@@ -76,13 +78,13 @@ nav li{
     border: 1px solid;
 }
 
-nav li:hover{
+nav li:hover {
     background-color: #00d0ff;
     transition: 0.2s;
 }
 
 
-.logo{
+.logo {
     text-transform: uppercase;
     font-family: "Bebas Neue";
     font-size: 3em;
@@ -90,7 +92,7 @@ nav li:hover{
     line-height: 0.75em;
     background: -webkit-linear-gradient(120deg, #ff00f7, #00d0ff);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;    
+    -webkit-text-fill-color: transparent;
 }
 
 /*bron voor het maken van de gradient: https://www.youtube.com/watch?v=OAMTLkZiyJM*/
@@ -106,14 +108,14 @@ HEADER PICTURE START
 ========================================
 */
 
-.banner-pictures-container{
+.banner-pictures-container {
     text-align: center;
     margin: 2em 0;
 
 }
 
 
-.banner-pictures-container > img{
+.banner-pictures-container > img {
     width: 100%;
 }
 
@@ -128,21 +130,21 @@ POPULAIRE EVENEMENTEN START
 ========================================
 */
 
-article{
+article {
     background-color: white;
     margin: 1em;
     display: inline-block;
     width: 20em;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 10%;
 }
 
-.flex-container-center{
+.flex-container-center {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -150,33 +152,34 @@ article{
 }
 
 
-@media(min-width: 880px){
-    .flex-container{
+@media(min-width: 880px) {
+    .flex-container {
         justify-content: space-between;
     }
 }
 
 
 
-.flex-container img{
+.flex-container img {
     width: 100%;
     margin: 0;
 }
 
-.tekst-container{
+.tekst-container {
     background-color: white;
     padding: 1em 2em 2em;
 }
 
-.tekst-container > q{
+.tekst-container > q {
     display: block;
-    margin: 1em 0;;
+    margin: 1em 0;
+    ;
     padding-top: 1em;
     border-top: 1px solid gray;
     font-size: 0.8em;
 }
 
-.tekst-container > a{
+.tekst-container > a {
     padding: 1em;
     margin-top: 2em;
     display: flex;
@@ -185,29 +188,29 @@ article{
     background-color: black;
 }
 
-.tekst-container > a:hover{
+.tekst-container > a:hover {
     color: white;
     background-color: #ff00f7;
 }
 
 
-.btn-positioner{
+.btn-positioner {
     display: flex;
     justify-content: center;
 }
 
-.btn{
+.btn {
     color: black;
     background-color: white;
     padding: 1em;
     display: inline-block;
     text-align: center;
     transition-property: background-color;
-    transition-duration: 0.2s;       
+    transition-duration: 0.2s;
 }
 
-.btn:hover{
-    background-color: #00d0ff;  
+.btn:hover {
+    background-color: #00d0ff;
 }
 
 /*======================================
@@ -229,7 +232,7 @@ https://www.youtube.com/watch?v=moBhzSC455o&t=1904s */
 
 
 
-.grid-container-uitgelichte-events{
+.grid-container-uitgelichte-events {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(5, 20% [col-start]);
@@ -239,41 +242,41 @@ https://www.youtube.com/watch?v=moBhzSC455o&t=1904s */
 }
 
 
-.uitgelicht-event{
+.uitgelicht-event {
     grid-column: 1/4;
     grid-row: 1/4;
     grid-row-start: 1;
     grid-row-end: 4;
     background-image: url(/images/headerImages/toverbos.jpeg);
 
-   
-/*    bron: Danny de Vries*/
+
+    /*    bron: Danny de Vries*/
     object-fit: contain;
     background-position: center center;
     background-repeat: no-repeat;
 }
 
-.uitgelicht-event h3{
+.uitgelicht-event h3 {
     color: white;
     display: block;
-    font-size: 3em; 
+    font-size: 3em;
     margin-bottom: 0.5rem;
     padding: 1rem 0;
     background-color: rgba(0, 0, 0, 0.5);
-    
+
 }
 
-.artiest-container{
+.artiest-container {
     grid-column: 4/6;
     grid-row: 1/4;
 }
 
-.artiest-container > img{
+.artiest-container > img {
     width: 14vw;
     display: inline-block;
 }
 
-.artiest-container > h4{
+.artiest-container > h4 {
     font-size: 2em;
     grid-column: 4/6;
     color: white;
@@ -300,37 +303,38 @@ FORMULIER BEGIN
 ========================================
 */
 
-footer{
+footer {
     margin-bottom: 10em;
 }
 
-fieldset{
+fieldset {
     border: none;
 }
 
-legend{
+legend {
     margin: auto;
 }
 
-label, input{
+label,
+input {
     display: block;
-    
+
 }
 
 
-label{
+label {
     text-align: left;
     margin-bottom: 0.5em;
     color: white;
 }
 
-input{
+input {
     width: 40em;
     height: 3em;
     margin-bottom: 1em;
 }
 
-#footerknop{
+#footerknop {
     width: 20em;
     color: white;
     background-color: #00d0ff;
@@ -350,7 +354,7 @@ DETAIL PAGINA BEGIN
 ========================================
 */
 
-.event-header{
+.event-header {
     display: inline-flex;
     justify-content: flex-start;
     padding-right: 0;
@@ -358,27 +362,34 @@ DETAIL PAGINA BEGIN
 }
 
 
-.event-header img{
+.event-header img {
     width: 60%;
     min-width: 400px;
 }
 
-header aside h2{
+header aside h2 {
     font-size: 3rem;
     margin-left: 2rem;
     margin-bottom: 0;
     animation: event 1s ease;
     letter-spacing: -5px;
-    
-/*    animation source: 
+
+    /*    animation source: 
     https://www.youtube.com/watch?v=zHUpx90NerM
     https://www.youtube.com/watch?v=gWai7fYp9PY
     */
 }
 
-@keyframes event{
-    0% {letter-spacing: 20px; opacity: 0%;}
-    100% {letter-spacing: -10; opacity: 100%;}
+@keyframes event {
+    0% {
+        letter-spacing: 20px;
+        opacity: 0%;
+    }
+
+    100% {
+        letter-spacing: -10;
+        opacity: 100%;
+    }
 }
 
 
@@ -393,51 +404,51 @@ EVENT INFO BEGIN
 ========================================
 */
 
-#info-tab{
+#info-tab {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-#info-tab button{
+#info-tab button {
     padding: 0.5em 1em;
     margin: 0 0.5em;
     cursor: pointer;
-     color:darkgray;
+    color: darkgray;
     background-color: black;
     border: none;
-    
+
 }
 
 /*Voor javascript*/
 /*bron https://www.youtube.com/watch?v=riDzcEQbX6k*/
 
 
-#info-tab button.active{
-    font-size:1.5rem;
+#info-tab button.active {
+    font-size: 1.5rem;
     color: white;
     pointer-events: none;
 }
 
-body .hide{
-    display:none;
+body .hide {
+    display: none;
 }
 
-.event-detail h4{
+.event-detail h4 {
     margin-top: 1em;
 }
 
-.event-detail a{
+.event-detail a {
     display: block;
     width: 300px;
 }
 
-.artiest-detail{
+.artiest-detail {
     display: inline;
 }
 
-.event-detail img{
+.event-detail img {
     width: 100%;
 }
 
